@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animate.css">
+        <script>
+            $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            	      if (target.length) {
+              	        $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 700);
+            return false;
+        }
+      }
+    });
+	});
+        </script>
+    </head>
+    
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-target="#navbar-ex-collapse"
+                    data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="hidden-lg hidden-md hidden-sm navbar-brand"><img height="29" alt="Brand" src="..\dogsface1.png" class="hidden-lg hidden-md hidden-sm"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active" id="btnQuemSomos">
+                            <a href="#quemsomos">Quem Somos?</a>
+                        </li>
+                        <li>
+                            <a href="#cardapio">Cardápio</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-expanded="false"><i class="fa fa-caret-down"></i>&nbsp;Fale Conosco!<br></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cover hidden-xs animated fadeInUpBig">
+            <div class="background-image-fixed cover-image" style="background-image : url('file:///C:/Users/Dell/SkyDrive/Pictures/DogMagau/DOG-WALL22.png')"></div>
+        </div>
+        <div id="quemsomos"></div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="..\dog-01b.jpg" class="center-block hidden-sm hidden-xs img-circle img-responsive slide"
+                        id="title1">
+                        <div id="carousel-example" data-interval="2000" class="carousel hidden-lg hidden-md slide"
+                        data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="dog-01b.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="dog-02b.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="dog-03b.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <h1>Quem Somos?</h1>
+                        <p class="lead">Em um ambiente descontraído para passar um tempo com os amigos, o Dog
+                            Magau traz a você os melhores (e maiores!) cachorros-quentes da cidade!
+                            Diversos sabores, desde os tradicionais até os mais incrementados, trazem
+                            esta delícia com um toque único que garante um sabor fogoso e único! Prove
+                            e sinta!</p>
+                        <p class="hidden-lg hidden-md lead">Você vai adorar nossos cachorros-quentes! Desde o tradicional com duas
+                            vinas, mostarda e ketchup, até os sabores mais malucos, com muitos temperos
+                            picantes e acompanhamentos incríveis!</p>
+                        <p class="hidden-lg hidden-md lead">Venha saborear quantos cachorros-quentes conseguir no nosso rodízio ou
+                            peça um do seu sabor preferido e bom apetite!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-sm hidden-xs section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 hidden-xs">
+                        <img src="dog-02b.jpg" class="center-block img-circle img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Você vai adorar</h2>
+                        <h2>nossos cachorros-quentes!</h2>
+                        <p class="lead">Desde o tradicional com duas vinas, mostarda e ketchup, até os sabores
+                            mais malucos, com muitos temperos picantes e acompanhamentos incríveis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-sm hidden-xs section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Venha saborear quantos</h2>
+                        <h2>cachorros-quentes conseguir</h2>
+                        <p class="lead">no nosso rodízio ou peça um do seu sabor preferido e bom apetite!</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="dog-03b.jpg" class="img-circle img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="teto.png" class="center-block img-responsive" id="cardapio">
+                        <div class="col-md-6 col-md-offset-3">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th data-halign="center" colspan="3" class="text-center">HOT DOG</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>DOG POP</td>
+                                        <td>1 vina, maionese, tomate, milho e batata palha.</td>
+                                        <td>R$5,70</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CLASSICO</td>
+                                        <td>2 vinas, maionese, vinagrete e queijo parmesão.</td>
+                                        <td>R$7,50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG JUNIOR</td>
+                                        <td>2 vinas, maionese, tomate, milho e batata palha.</td>
+                                        <td>R$7,50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG JUNIOR TURBO</td>
+                                        <td>2 vinas, maionese, tomate, milho e batata palha. 1 recheio à escolher:
+                                            Requeijão cremoso, cheddar, mussarela.</td>
+                                        <td>R$9,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG FRANGO</td>
+                                        <td>1 vina, maionese, tomate, milho, batata palha e frango desfiado. 1 recheio
+                                            à escolher: Requeijão cremoso, cheddar, mussarela.</td>
+                                        <td>R$9,90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG BACON</td>
+                                        <td>1 vina, maionese, tomate, milho, batata palha e bacon em cubos. 1 recheio
+                                            à escolher: Requeijão cremoso, cheddar, mussarela.</td>
+                                        <td>R$9,90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG CALABRESA</td>
+                                        <td>1 vina, maionese, tomate, milho, batata palha e calabresa picada. 1 recheio
+                                            à escolher: Requeijão cremoso, cheddar, mussarela ou parmesão.</td>
+                                        <td>R$9,90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG SUPER POWER</td>
+                                        <td>2 vinas, maionese, tomate, milho e batata palha. 2 carnes à escolher:
+                                            Frango, bacon ou calabresa. 1 recheio à escolher: Requeijão cremoso, cheddar,
+                                            mussarela ou parmesão.</td>
+                                        <td>R$14,50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG AMSTERDÃ</td>
+                                        <td>1 Linguiça tipo holandesa, maionese, tomate, milho e palmito. 1 recheio
+                                            à escolher: Requeijão cremoso, cheddar, mussarela ou parmesão.</td>
+                                        <td>R$12,50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG RÚCULA</td>
+                                        <td>1 vina, maionese, tomate, rúcula, tomate seco e queijo parmesão. 2 carnes
+                                            à escolher: Frango, bacon ou calabresa.</td>
+                                        <td>R$12,50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG ITALIANO</td>
+                                        <td>1 lingüiça tipo holandesa, maionese, requeijão cremoso, peperoni e tomate.
+                                            1 recheio à escolher: parmesão, mussarela ou provolone.</td>
+                                        <td>R$12,50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG FAISAL</td>
+                                        <td>Pão do dog, mignon em tiras, maionese, tomate, milho, alface americana.
+                                            1 recheio à escolher: Requeijão cremoso, cheddar, mussarela ou parmesão.</td>
+                                        <td>R$15,20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG PARAÍBA</td>
+                                        <td>2 vinas, maionese, tomate, carne bovina desfiada, queijo parmesão e batata
+                                            palha.</td>
+                                        <td>R$13,50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOG MAGAU</td>
+                                        <td>Lemon pepper, cebola crocante, 2 vinas, queijo cheddar, maionese, calabresa
+                                            e molho fogoso.</td>
+                                        <td>R$14,50</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th data-halign="center" colspan="2" class="text-center">PORÇÕES</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>PORÇÃO DE FRITAS GRANDE</td>
+                                        <td>R$8,90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PORÇÃO DE FRITAS MÉDIA</td>
+                                        <td>R$5,40</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ONION RINGS GRANDE</td>
+                                        <td>R$13,80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ONION RINGS MÉDIA</td>
+                                        <td>R$8,80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PORÇÃO SANDRA ROSA MADALENA (Linguiça calabresa, mandioquinha frita e
+                                            mini kibe)</td>
+                                        <td>R$15,90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <img src="piso.png" class="center-block img-responsive img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">Team</h1>
+                        <p class="text-center">We are a group of skilled individuals.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="DogMagau\ahu-lowres.png" class="center-block img-responsive">
+                        <h3 class="text-center">John Doe</h3>
+                        <p class="text-center">Developer</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="DogMagau\batel-lowres.png" class="center-block img-responsive img-thumbnail">
+                        <h3 class="text-center">John Doe</h3>
+                        <p class="text-center">Developer</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="DogMagau\jdamericas-lowres.png" class="center-block img-responsive">
+                        <h3 class="text-center">John Doe</h3>
+                        <p class="text-center">Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="cardapio">
+            <div class="container-fluid"></div>
+        </div>
+    </body>
+
+</html>
